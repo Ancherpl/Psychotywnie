@@ -1,0 +1,147 @@
+<!--Kod został napisany w 100% przezemnie i przez moich kolegów z EDENU od podstaw-->
+
+
+<!--
+ /*ja to pierdole co za huj się zgodził na
+ branie w tym udziału?!
+
+ A nie czekaj... 
+ 
+ to byłem ja
+ ~~Danuel
+ */
+-->
+<!--/*ja pierdole ale mi się nie chce kto powiedział
+że będzie pracować nad tą stroną
+
+A nie czekaj...
+
+to byłem ja
+~Przemek-->
+<!DOCTYPE html>
+<html lang="pl">
+   <head>
+
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobilne gówna -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- wiadomości o twórfcach itd. -->
+      <title>psychotywnie</title>
+      <meta name="keywords" content="psychotywnie psychika depresja choroby psychiczne">
+      <meta name="description" content="Katarzyna która dała nam to do roboty w ramch projektu">
+      <meta name="author" content="Psychotywni">
+     
+      <!-- styl css, duuuuuuużo tego ~Daniel-->
+      <link rel="stylesheet" href="css/style.css">
+      <!--tu będzie ikona by się ładnie wyświetlała, a jak na razie mamy oko :> ~Daniel-->
+      <link rel="icon" href="images/logo.png" type="image/png                                                           " />
+   
+   </head>
+   <body>
+      
+      <div id="mySidepanel" class="sidepanel">
+         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img id="obraz2" src="images/logo.png"></a>
+         <a href="javascript:void(0)" class="closebtn" onclick="Nav(event)">×</a>
+         <a href="index.html">Czym się zajmujemy? </a>
+         <a href="kontakt.html">Kontakt</a>
+         <a href="zespol.html">Zespół</a>
+      </div>
+
+      <header>
+         <div class="header">       
+            <div id="zdjecie">
+               <!--tu mo być logo/nazwa czy inny kij ~Daniel-->
+               <img id="obraz" src="images/logo.png">
+            </div>
+                  
+            <div class="right_bottun">
+               <!--to jest przycisk od menu, nie dotykać bo zajebie ~Daniel -->
+                  <button class="openbtn" onclick="Nav(event)"><img src="images/menu_icon.png" alt="#"/> </button> 
+            </div> 
+         </div>
+      </header>
+
+      <!-- tu momy ten tekst główny na stronie ~Daniel-->
+
+      <section class="banner_main">
+         <div class="notka">
+            <h1><b>Kontakt z nami</b></h1>
+            <div class="ladnie">
+               <div class="lewyK"></div>
+               <div class="srodekK">
+                  <h3>Kontaktuj się zawsze kiedy musisz, bardzo chętnie Cię wysłuchamy i pomożemy w miarę Naszych możliwości :></h3><br>
+                  <h2>Nasze social media:</h2> 
+                  <h3> <!--Dałem obrazki bo czm nie ~Krzysztof-->
+                     <a href="https://www.facebook.com/profile.php?id=100087006525573" target="_blank"><img src="./images/media/facebook.png" width="40px" height="40px"></a>
+                     <a href="https://www.instagram.com/psychotywnie/" target="_blank"><img src="./images/media/instagram.png" width="40px" height="40px"></a>
+                     <a href="https://twitter.com/home" target="_blank"><img src="./images/media/twitter.png" width="40px" height="40px"></a> <br> 
+                     <a href="https://youtube.com" target="_blank"><img src="./images/media/youtube.png" width="40px" height="40px"></a> 
+                     <a href="https://tiktok.com" target="_blank"><img src="./images/media/tictoc.png" width="40px" height="40px"></a> 
+                     <a href="https://wykop.pl" target="_blank"><img src="./images/media/wykop.png" width="40px" height="40px"></a>
+                  </h3> <!--Btw pozmieniajcie linki jak już będą te konta-->
+               </div>
+               <div class="prawyK"></div>
+            </div>
+         </div>
+              
+      <footer>
+         <div class="copyright">
+            <div class="row">
+               <p>© 2022 All Rights Reserved by: EDEN</p>
+                     <!--
+                        trzeba się zastanowić czy chcemy być ,,jeźdzcami" czy ,,Edenem" albo czymś innym czekam na wasze propozycje jak coś :>
+                     ~Daniel
+                     -->
+                     <!--
+                      Moim zdaniem powinniśmy być psychotywnie skoro trzeba "doceniać" prace innych
+                     ~Przemek
+                     -->
+                     <!--
+                        nie przesadzaj już z tym Przemek bo to nie jest ani śmieszne ani nic
+
+                        Zostajemy Edenem...
+                        ~Danuel
+                     -->
+                        <!--
+                        rzeczówy do wyporzyczeń, możecie patrzeć 
+                        tam po kawałki kodu :> pamiętajcie by przestrzegać 
+                        praw autorskich, bo nie chce potem iść do kicia
+                        https://html.design/
+                        ~Daniel
+
+                     -->
+            </div>
+         </div>
+      </footer>
+
+      <!--/*ten na dole cosiek jest od menu
+         nie ruszać bo ręce upierdole przy nogach
+         ~Daniel
+         */-->
+      <script>
+         let i = true
+         var body = document.querySelector("body")
+         body.onclick = function(event){
+            if (i==false){
+            Nav(event)
+            }
+         }
+         function Nav(event) {
+            if (i==true){
+               document.getElementById("mySidepanel").style.width = "250px";
+               i = false
+            }
+            else if (i==false){
+            document.getElementById("mySidepanel").style.width = "0";
+            i = true
+            }
+         event.stopPropagation()
+         }
+
+      </script>
+   </body>
+</html>
+
