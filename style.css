@@ -1,0 +1,366 @@
+
+/*Kod został napisany w 100% przezemnie i przez moich kolegów z EDENU od podstaw */
+
+
+/*--------------------------------------------------------------------- szkielet stronnnyyyyyy ---------------------------------------------------------------------*/
+
+
+body {
+     color: #666666;
+     /*background: rgb(169,72,184);
+     background: linear-gradient(90deg, rgba(169,72,184,1) 0%, rgba(13,221,208,1) 100%);/
+     /*linear-gradient(90deg, rgba(100, 165, 111) 0%, rgba(25, 165, 111) 100%)*/
+     background-color: rgb(46, 137, 85);
+
+     font-size: 15px;
+     font-family: 'Poppins', sans-serif;
+     line-height: 1.80857;
+     font-weight: normal;
+/*
+    background: url('images/las.png'); 
+    background-size: 100% 100%;
+    background-attachment: fixed;
+*/
+
+
+}
+a {
+     color: #1f1f1f;
+     text-decoration: none !important;
+     outline: none !important;
+     -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+     -ms-transition: all .3s ease-in-out;
+     -o-transition: all .3s ease-in-out;
+     transition: all .3s ease-in-out;
+}
+
+/*h1,h2,h3,h4,h5,h6 tak bylo wczesniej zmienilem bo mi pasowalo (jezeli cos sie zwalilo to dajcie z powrotem)*/
+h1 {
+     letter-spacing: 0;
+     font-weight: normal;
+     position: relative;
+     padding: 0 0 10px 0;
+     font-weight: normal;
+     line-height: normal;
+     color: rgb(195, 121, 196);
+     margin: 0
+}
+
+h1 {
+     font-size: 24px;
+}
+
+h2 {
+     font-size: 18px;
+}
+
+h3 {
+     font-size: 18px;
+}
+
+h4 {
+     font-size: 16px
+}
+
+h5 {
+     font-size: 14px
+}
+
+h6 {
+     font-size: 13px
+}
+/*mickiewicz to chuj*/
+
+*,*::after,*::before {
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+}
+
+p {
+     margin: 1px;
+     font-weight: 500;
+     font-size: 15px;
+     line-height: 24px;
+}
+
+a {
+     color: #222222;
+     text-decoration: none;
+}
+
+/*-- menu--*/
+
+.sidepanel {
+     width: 0;
+     position: fixed;
+     z-index: 9999;
+     height: 100%;
+     /*te dwa niżej są po to by nie wywalow w diva */
+     top: 0;
+     left: 0;
+     background-color: #070101c9;
+     overflow-x: hidden;
+     transition: 1s;
+     padding-top: 50px;
+}
+
+.sidepanel a {
+     padding: 5px;
+     text-decoration: none;
+     font-size: 18px;
+     color: #fff;
+     display: block; 
+}
+
+/*najechany koloreeeeeek*/
+.sidepanel a:hover {
+     /*tak jak się tu najeżdza myszkoą tak ja zrobię ci najazd na chatę ":> */
+     color: rgb(195, 121, 196);
+     margin: 0 0 0 10px;
+     
+}
+
+
+     
+.sidepanel .closebtn {
+     position: absolute;
+     top: 0;
+     right: 25px;
+     font-size: 36px;
+}
+
+.openbtn {
+     font-size: 20px;
+     cursor: pointer;
+     background-color: transparent;
+     padding: 0;
+     border: none;
+     margin-left: 16px;
+}
+
+/*-- góra --*/
+
+.logo {/**/
+     padding-top: 12px;
+}
+
+#zdjecie{
+     width: 90%;
+     margin-right: 128px;
+}
+
+.header {
+     display: flex;
+     padding: 30px 30px;
+     background: transparent; 
+}
+
+.right_bottun {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: right;
+     width: 90%;
+}
+
+ul.conat_info li {
+     display: inline-block;
+     padding: 0px;
+}
+
+ul.conat_info li a {
+     color: #fff;
+     display: inline-block;
+     font-size: 30px;
+}
+
+ul.conat_info li a:hover {
+     color: #fff;
+}
+
+/** środek section **/
+
+.banner_main {
+     background-size: auto 78%;
+     background-repeat: no-repeat;
+     background-position: right top;
+     margin: auto;
+}
+
+.notka/*CO JEST Z TYM KURWA NIE TAK??*/ /*ty ez?*/
+    {
+      background-color: rgba(40, 40, 40, 0.474);
+      color: #fff;
+      width: 100%;
+      padding: 20px;
+      border-radius: 100px;
+      text-align: center;
+      margin-bottom: 10%;
+      animation: spadanie 1s ;
+}
+@keyframes spadanie {
+  0% {
+    background-color: rgba(16, 128, 76, 0.733);
+  }
+  100% {
+    background-color: rgba(40, 40, 40, 0.474);
+  }
+}
+
+
+
+
+
+.ladnie{
+     display: flex;
+     flex-direction: row;
+}
+
+/*ułożenie na środku w kontaktach*/
+.lewyK{
+     width: 20%;
+}
+.srodekK{
+     width: 60%;
+}
+.prawyK{
+     width: 20%;
+}
+/*głupi pomysł ale działa*/
+
+
+/** footer **/
+
+.footer {
+     background: #f7f7f9;
+     margin-top: 90px;
+     padding-top: 90px;
+     text-align: center;
+}
+
+/*ten tu zakodowany jest od tła takiego nie za ładnego trzeba się zdecydować potem czy je bieremy*/
+/*
+.copyright {
+     background-color: #0f98f8;
+     margin-top: 70px;
+     padding: 20px 0;
+}
+*/
+
+.copyright p {
+     color: #fff;
+     font-size: 18px;
+     line-height: 22px;
+     text-align: center;
+     padding-top: 0px;
+     font-weight: normal;
+     padding-right: 0 !important;
+}
+
+.copyright a {
+     color: #fff;
+}
+
+
+/** end footer **/
+/*logo*/
+#obraz
+{
+
+height: 100px;
+}
+
+
+
+
+
+
+#obraz2
+{
+height: 0px;
+}
+
+/*na telefooooooooon*/
+@media screen and (max-width: 500px) {
+     #obraz
+{
+height: 0px;
+}
+#obraz2
+{
+height: 100px;
+}
+     h1 {
+          font-size: 44px;
+     }
+     .notka/*CO JEST Z TYM KURWA NIE TAK??*/
+     {
+          margin-top: 10%;
+          font-size: 24px;
+          /*padding: 30px;*/
+     }
+     .sidepanel a {
+          padding: 5px;
+          text-decoration: none;
+          font-size: 28px;
+          color: #fff;
+          display: block;
+     }
+}
+
+
+
+
+
+/* tu są sobie zrobione animacje kolorków :> */
+#kolorki
+{
+animation: kolorki 5s infinite;
+}
+#kolorki1
+{
+animation: kolorki 5.5s infinite;
+}
+#kolorki2
+{
+animation: kolorki 4.5s infinite;
+}
+@keyframes kolorki {
+  0% {
+    color: black;
+  }
+     10%
+     {
+    color: rgba(28, 152, 88, 0.474);
+  }
+     20%
+     {
+    color: rgba(214, 14, 14, 0.474);
+  }
+
+  30% {
+    color: rgb(255, 255, 255);
+  }
+     40% {
+    color: rgba(221, 255, 0, 0.474);
+  }
+     50% {
+    color: rgba(255, 0, 153, 0.474);
+  }
+     60% {
+    color: rgb(255, 75, 75);
+  }
+     70% {
+    color: rgb(80, 187, 182);
+  }
+     80% {
+    color: rgb(197, 8, 255);
+  }
+     90% {
+    color: rgba(255, 0, 157, 0.776);
+  }
+     100% {
+    color: rgba(128, 255, 0, 0.474);
+  }
+}
