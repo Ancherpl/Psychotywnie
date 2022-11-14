@@ -1,0 +1,154 @@
+<!--Kod został napisany w 100% przezemnie i przez moich kolegów z EDENU od podstaw-->
+
+
+<!-- ~Danuel-->
+
+<!--/*ja to pierdole co za huj się zgodził na
+ branie w tym udziału?!
+
+ A nie czekaj... 
+ 
+ to byłem ja
+ ~~Danuel
+ */-->
+
+ <!--/*ja pierdole ale mi się nie chce kto powiedział
+że będzie pracować nad tą stroną
+
+A nie czekaj...
+
+to byłem ja
+~Przemek-->
+
+
+<!DOCTYPE html>
+<html lang="pl">
+   <head>
+
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobilne główna ~~Danuel-->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- wiadomości o twórcach itd. -->
+      <title>psychotywnie</title>
+      <meta name="keywords" content="psychotywnie psychika depresja choroby psychiczne">
+      <meta name="description" content="Katarzyna która dała nam to do roboty w ramach projektu">
+      <meta name="author" content="Psychotywni">
+     
+      <!-- styl css, duuuuuuużo tego ~~Danuel-->
+      <link rel="stylesheet" href="css/style.css">
+      <!--tu będzie ikona by się ładnie wyświetlała, a jak na razie mamy oko :> ~~Danuel-->
+      <link rel="icon" href="images/logo.png" type="image/png                                                           " />
+   
+   </head>
+   <body>
+
+      <div id="mySidepanel" class="sidepanel">
+         <img id="obraz2" src="images/logo.png">
+         <a href="javascript:void(0)" class="closebtn" onclick="Nav(event)">×</a>
+         <a href="index.html">Czym się zajmujemy? </a>
+         <a href="kontakt.html">Kontakt</a>
+         <a href="zespol.html">Zespół</a>
+      </div>
+
+      <header>
+         <div class="header">  
+            <div id="zdjecie">
+               <!--tu mo być logo/nazwa czy inny kij ~~Danuel-->
+               <img id="obraz" src="images/logo.png">
+            </div>
+                  
+            <div class="right_bottun">
+               <!--to jest przycisk od menu, nie dotykać bo zajebie ~~Danuel -->
+                  <button class="openbtn" onclick="Nav(event)"><img src="images/menu_icon.png" alt="#"/>
+            </div>
+         </div>
+      </header>
+
+      <!-- tu momy ten tekst główny na stronie ~~Danuel-->
+
+      <section class="banner_main"> 
+         <div class="notka">
+            <h1><b>Psychotywnie składa się z:</b></h1> <br><!--mozecie tutaj wymienic kazdej osoby robote. Prosze was bo mi sie nie chce wypisywac kazdego-->
+
+
+<b id="kolorki">Kasia </b> - Pani kierownik 
+<br><br>
+<b id="kolorki1">Paweł</b> - grupowy Ekstrawertyk
+<br><br>
+<b id="kolorki2">Hania</b> - Jaśnie Panna Szanowna Książna Królowa Królów i Cesarzowa Świata
+<br><br>
+<b id="kolorki">Hisia</b> - Pieski, Kotki itd.
+<br><br>
+<b id="kolorki1">Ewa</b> - nie wiadomo kto to ale jest
+<br><br>
+<b id="kolorki2">Danuel (głód)</b> - Pan maruda niszczyciel dobrej zabawy
+<!--
+smutny żywot programisty
+łeb ma krwisty
+ma przekrwione jakoś oczy
+w kółko ciągle coś tam mroczy
+beckendowcy jednak twierdzą
+że frontendowcy nie są programistami nimi będąc
+-->
+<br><br>
+<b id="kolorki">Przemeg (wojna)</b> - głowa rodziny<!--przmek to ten który jako jeden z niewielu potrafi programować-->
+<br><br>
+<b id="kolorki1">Krzyrztof (zaraza)</b> - grupowy pocieszyciel, jak coś można się na nim wyżywać :><!--ten co wie co robi-->
+<br><br>
+<b id="kolorki2">Filib (śmierć)</b> - ogólnie to tylko komentuje<!---ten co w sumie nic nie robi XD-->
+         </div>
+            
+      <footer>
+         <div class="copyright">
+            <div class="row">
+               <p>© 2022 All Rights Reserved by: EDEN</p>
+                     <!--
+                        trzeba się zastanowić czy chcemy być ,,jeźdzcami" czy ,,Edenem" albo czymś innym czekam na wasze propozycje jak coś :>
+                     ~~Danuel
+                        Moim zdaniem powinniśmy być psychotywnie skoro trzeba "doceniać" prace innych a to strona projektu nie nasza
+                     ~Przemek
+                     -->
+                     
+                        <!--
+                        rzeczówy do wyporzyczeń, możecie patrzeć 
+                        tam po kawałki kodu :> pamiętajcie by przestrzegać 
+                        praw autorskich, bo nie chce potem iść do kicia
+                        https://html.design/
+                        ~~Danuel
+                     -->
+            </div>
+         </div>
+      </footer>
+
+      <!--/*ten na dole cosiek jest od menu
+         nie ruszać bo ręce upierdole przy nogach
+         ~~Danuel
+         */-->
+
+
+
+      <script type="text/javascript">
+         let i = true
+         var body = document.querySelector("body")
+         body.onclick = function(event){
+            if (i==false){
+            Nav(event)
+            }
+         }
+         function Nav(event) {
+            if (i==true){
+               document.getElementById("mySidepanel").style.width = "250px";
+               i = false
+            }
+            else if (i==false){
+               document.getElementById("mySidepanel").style.width = "0";
+               i = true
+            }
+         event.stopPropagation()
+         }
+      </script>
+   </body>
+</html>
+
